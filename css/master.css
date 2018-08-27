@@ -3,8 +3,13 @@ body{
   background-color: #02010a;
   font-family: 'Dancing Script', cursive;
 }
+@media (min-width: 600px) {
+	.contenedor2 {
+   display: flex;
+	}
+}
 img{
-
+ box-shadow: 2px 2px 5px #02010a;
 }
 header{
    background-color: #5b7989;
@@ -42,15 +47,15 @@ header nav a:active{
   margin: 0 auto;
   justify-content: center;
 }
+
 .contenedor1 {
   background-color:  #82c3a6;
   margin: 0 auto;
   width: 100%;
-  display: flex;             /*para centrar la imagen*/
-  justify-content: center;   /*para centrar la imagen*/
-  align-items: center;       /*para centrar la imagen*/
-
-
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;     /*para centrar la imagen*/
+  align-items: center;        /*para centrar la imagen*/
 }
 .contenedor1 div figure img{
   width: 100%;
@@ -58,23 +63,37 @@ header nav a:active{
 }
 .contenedor1 > div{
   border: 2px solid white;
-  width: 90%;
+  width: 100%;
 }
 .contenedor2{
   background-color:  #d5c75f;
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  /*display: flex;*/
   text-align: center;
   text-decoration: underline;
   font-size: 1.5em;
-}
-.contenedor2 div figure img{
+  margin: 0 auto;
   width: 100%;
+  justify-content: center;     /*para centrar la imagen*/
+  align-items: center;        /*para centrar la imagen*/
+}
+.contenedor2 div img{
+  width: 100%;
+  transition: transform 3s;
 }
 .contenedor2 > div{
-  margin: 10px;
-  padding: 10px;
+
   width: 100%;
   border: 2px solid white;
+  transition: transform 1.5s;
+}
+#paisajes img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 5px #82c3a6;
+
+}
+
+#retratos img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px 5px #82c3a6 ;
 }
