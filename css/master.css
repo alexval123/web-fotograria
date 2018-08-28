@@ -1,3 +1,15 @@
+@keyframes anime {
+   0%{
+     margin-top: 150%;
+   }
+   60%{
+     margin-top: -5%;
+   }
+   100%{
+     margin-top: 0%;
+   }
+ }
+
 body{
   font-size: 16px;
   background-color: #02010a;
@@ -37,6 +49,12 @@ body{
     text-decoration: none;
     left:  65%;
     top: -25px;
+  }
+  header H1{
+    position: relative;
+    text-decoration: none;
+    left: 15px;
+
   }
 
   footer{
@@ -83,6 +101,7 @@ header nav a:active{
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  animation: anime 1s; /*para crear la animacion */
 }
 #general{
   width: 100%;
