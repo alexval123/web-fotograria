@@ -13,6 +13,10 @@ body{
     position: relative;
     text-align: center;
   }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
   footer div{
     width: 100%;
 
@@ -34,10 +38,7 @@ body{
     left:  65%;
     top: -25px;
   }
-  #actual{
-    text-decoration:none;
 
-  }
   footer{
     display: flex;
     flex-direction: row;
@@ -46,6 +47,10 @@ body{
     width: 25%;
     margin: 20px;
   }
+
+}
+#actual{
+  text-decoration:none;
 
 }
 img{
@@ -129,11 +134,24 @@ header nav a:active{
   transform: translate(20px,-5px);
   box-shadow: 2px 2px 5px #82c3a6 ;
 }
+#imagen1{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+#imagen2, #imagen4, #imagen6{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+#imagen3{
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
 footer{
   border-radius: 0px 0px 10px 10px;
   min-height: 200px;
   background-color: #C6d5c5;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 #redes a{
   display: block;
